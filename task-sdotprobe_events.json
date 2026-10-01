@@ -1,0 +1,41 @@
+{
+  "onset": {
+    "Description": "Event onset relative to the first stored sample in the corresponding MEG recording.",
+    "Units": "s"
+  },
+  "duration": {
+    "Description": "Event duration measured from onset. Stimulus events use the 0.5-second presentation duration specified by the experimental protocol; button responses are instantaneous.",
+    "Units": "s"
+  },
+  "event_type": {
+    "Description": "Type of event.",
+    "Levels": {
+      "stimulus": "Presentation of the word-pair stimulus.",
+      "response": "Button-response marker recorded by the MEG system."
+    }
+  },
+  "trial_type": {
+    "Description": "Experimental condition; n/a for response events. Each stimulus presented two words drawn from three categories: death-related, life-related, and neutral. Congruent trials placed the probe at the location of the death- or life-related target word; incongruent trials placed the probe at the location of the accompanying neutral word. Neutral trials presented two neutral words.",
+    "Levels": {
+      "DC": "A death-related word and a neutral word were presented, and the probe appeared at the location of the death-related word.",
+      "DI": "A death-related word and a neutral word were presented, and the probe appeared at the location of the neutral word.",
+      "LC": "A life-related word and a neutral word were presented, and the probe appeared at the location of the life-related word.",
+      "LI": "A life-related word and a neutral word were presented, and the probe appeared at the location of the neutral word.",
+      "NN": "Two neutral words were presented.",
+      "unknown_condition": "Stimulus onset without a corresponding condition marker in the MEG trigger data."
+    }
+  },
+  "response": {
+    "Description": "Recorded button response; n/a for stimulus events.",
+    "Levels": {
+      "top": "Top button response.",
+      "bottom": "Bottom button response."
+    }
+  },
+  "value": {
+    "Description": "Integer value from the source MEG trigger export. Values must be interpreted together with event_type, trial_type, and response because encoding can vary by subject."
+  },
+  "sample": {
+    "Description": "Sample index corresponding to the event onset in the MEG recording."
+  }
+}
