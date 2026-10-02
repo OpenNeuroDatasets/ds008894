@@ -57,7 +57,7 @@ through NCT00397111.
 
 Example subject layout:
 
-```text
+```
 sub-<label>/
 └── ses-1/
     ├── anat/
