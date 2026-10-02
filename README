@@ -25,7 +25,7 @@ MEG was collected with a 275-channel CTF system equipped with superconducting qu
 ### Anatomical MRI acquisition and MEG coregistration
 
 T1-weighted structural MRI was acquired with a 3 T GE Signa scanner (GE,
-Milwaukee, Wisconsin, USA). The MEG data were coregistered to each
+Milwaukee, Wisconsin, USA) and are available for 23 subjects. The MEG data were coregistered to each
 participant's T1-weighted image using fiducial coils at the nasion and the left and right preauricular points.
 
 
