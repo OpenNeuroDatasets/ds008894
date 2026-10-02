@@ -10,8 +10,8 @@
         "Elizabeth Ballard"
     ],
     "Curators": [
-	    "Ashley Ptinis",
-	    "Dustin Moraczewski"
+        "Ashley Ptinis",
+        "Dustin Moraczewski"
     ],
     "GeneratedBy": [
         {
@@ -30,6 +30,6 @@
     ],
     "ReferencesAndLinks": [
         "https://doi.org/10.1016/j.pscychresns.2026.112205"
-
-    ]
+    ],
+    "DatasetDOI": "doi:10.18112/openneuro.ds008894.v1.0.0"
 }
