@@ -77,6 +77,7 @@ files are retained as components of the raw recording.
 ## Known issues
 
 - Partial MEG runs: sub-239 (285 trials), sub-319 (182 trials), sub-432 (321 trials), and sub-509 (335 trials).
+- 5 participants MEG data were excluded from this release.
 - Anatomical MRI scans are not available for all subjects.
 - For defacing purposes 2 subjects anatomical scans are skull stripped (sub-112 and sub-226)
 - Clinical scales are unavailable for some healthy volunteers.
