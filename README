@@ -2,7 +2,7 @@
 
 ## Overview
 
-This dataset contains magnetoencephalography (MEG) data acquired while participants completed a suicide dot-probe task. It was used to investigate whether suicide risk is associated with altered selective attention to mortality-related information and with changes in the cortical dynamics that support sensory processing and attentional control as described in the paper: *Attentional bias to death-related stimuli: Modeling cortical dynamics underlying suicide risk*.
+This dataset contains magnetoencephalography (MEG) data acquired while participants completed a suicide dot-probe task. It was used to investigate whether suicide risk is associated with altered selective attention to mortality-related information and with changes in the cortical dynamics that support sensory processing and attentional control as described in the paper: Lee Y, Gilbert JR, Lamontagne SJ, et al. Attentional bias to death-related stimuli: Modeling cortical dynamics underlying suicide risk. Psychiatry Res Neuroimaging. 2026;359:112205. doi:10.1016/j.pscychresns.2026.112205.
 
 ## Participants and recruitment
 
@@ -78,6 +78,6 @@ files are retained as components of the raw recording.
 
 - Partial MEG runs: sub-239 (285 trials), sub-319 (182 trials), sub-432 (321 trials), and sub-509 (335 trials).
 - 5 participants MEG data were excluded from this release.
-- Anatomical MRI scans are not available for all subjects.
+- Anatomical MRI scans are available for only 23 subjects.
 - For defacing purposes 2 subjects anatomical scans are skull stripped (sub-112 and sub-226)
 - Clinical scales are unavailable for some healthy volunteers.
