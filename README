@@ -57,18 +57,18 @@ through NCT00397111.
 
 Example subject layout:
 
-```
-sub-<id>/
+```text
+sub-{label}/
 └── ses-1/
     ├── anat/
-    │   ├── sub-<id>_ses-1_T1w.json
-    │   └── sub-<id>_ses-1_T1w.nii.gz
+    │   ├── sub-{label}_ses-1_T1w.json
+    │   └── sub-{label}_ses-1_T1w.nii.gz
     └── meg/
-        ├── sub-<id>_ses-1_coordsystem.json
-        ├── sub-<id>_ses-1_task-sprobe_channels.tsv
-        ├── sub-<id>_ses-1_task-sprobe_events.tsv
-        ├── sub-<id>_ses-1_task-sprobe_meg.json
-        └── sub-<id>_ses-1_task-sprobe_meg.ds/
+        ├── sub-{label}_ses-1_coordsystem.json
+        ├── sub-{label}_ses-1_task-sprobe_channels.tsv
+        ├── sub-{label}_ses-1_task-sprobe_events.tsv
+        ├── sub-{label}_ses-1_task-sprobe_meg.json
+        └── sub-{label}_ses-1_task-sprobe_meg.ds/
 ```
 
 The `*_meg.ds/` directory contains the native CTF MEG recording. Its vendor
