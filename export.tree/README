@@ -1,0 +1,83 @@
+# Attentional bias to death-related stimuli: Modeling cortical dynamics underlying suicide risk
+
+## Overview
+
+This dataset contains magnetoencephalography (MEG) data acquired while participants completed a suicide dot-probe task. It was used to investigate whether suicide risk is associated with altered selective attention to mortality-related information and with changes in the cortical dynamics that support sensory processing and attentional control as described in the paper: Lee Y, Gilbert JR, Lamontagne SJ, et al. Attentional bias to death-related stimuli: Modeling cortical dynamics underlying suicide risk. Psychiatry Res Neuroimaging. 2026;359:112205. doi:10.1016/j.pscychresns.2026.112205.
+
+## Participants and recruitment
+
+The dataset includes 43 participants of the 53 adults in the manuscript who consented to data sharing, aged 19-67 years (mean 37.1, SD 14.3), 27 females and 16 males.
+
+Psychiatric diagnoses were confirmed with the Structured Clinical Interview
+for DSM Psychiatric Disorders (SCID). The participants were assigned to one of three groups:
+- `suicide risk` (n = 12): individuals with a lifetime history of suicidal ideation or a suicide attempt;
+- `clinical control` (n = 13): individuals with depression and no history of suicide risk; and
+- `healthy volunteer` (n = 18): individuals without the clinical characteristics defining the other groups.
+
+The group counts above describe this dataset sample (43 participants).
+
+Participants were recruited through the Neurobiology of Suicide protocol (NCT02543983) and the Development of Imaging Techniques for Studying Mood and Anxiety Disorders protocol (NCT00397111). Participants were excluded for current drug or alcohol dependence, severe or unstable medical conditions, a positive human immunodeficiency virus test, pregnancy, neurological conditions, schizophrenia, or inability to speak English. Participants were either medication-free or continued clinically indicated prescribed medications. Study procedures were conducted under the applicable institutional review and informed-consent requirements. Each patient was assigned a Clinical Research Advocate from the Human Subjects Protection Unit who served as an independent advocate from consent through study completion.
+
+## MEG acquisition
+
+MEG was collected with a 275-channel CTF system equipped with superconducting quantum interference device-based axial gradiometers (VSM MedTech Ltd., Coquitlam, British Columbia, Canada). Data were recorded in a magnetically shielded room at 1200 Hz with a bandwidth of 0–300 Hz. Synthetic third-order balancing was used for active noise cancellation.
+
+### Anatomical MRI acquisition and MEG coregistration
+
+T1-weighted structural MRI was acquired with a 3 T GE Signa scanner (GE,
+Milwaukee, Wisconsin, USA) and are available for 23 subjects. The MEG data were coregistered to each
+participant's T1-weighted image using fiducial coils at the nasion and the left and right preauricular points.
+
+
+## Suicide dot probe task
+
+During MEG recording, participants performed a modified dot-probe task using life-related, death-related, and neutral words. Each trial presented a vertical pair of words followed by a probe in the former location of one of the words. Participants used a button box to indicate whether the probe appeared in the top or bottom location. Participants indicated the location of the probe as quickly and accurately as possible. A trial was congruent when the probe replaced the target word and incongruent when it replaced the neutral word.
+
+The task included five conditions:
+- death congruent
+- death incongruent
+- life congruent
+- life incongruent
+- neutral: stimulus 2 neutral words
+
+MEG runs consisted of 336 trials, 112 death related trials, 112 life related trials, and 112 neutral trials. The `*_events.tsv` files give the onset times for the MEG trigger stimulus and response events.
+
+## Clinical assessments
+
+The `participants.tsv` file contains the summary totals for the following clinician rated assessments:
+- `cmars_madrs_tot`: Montgomery-Åsberg Depression Rating Scale (MADRS)
+- `cmars_hamd_24_tot`: 24-item Hamilton Depression Rating Scale (HAMD-24)
+- `cmars_hama_tot`: Hamilton Anxiety Rating Scale (HAM-A)
+- `ssi_total_curr` and `ssi_total_past`: Scale for Suicide Ideation (SSI), including past and current ideation.
+
+Clinical scales were unavailable for the nine healthy volunteers recruited
+through NCT00397111.
+
+## Dataset contents and structure
+
+Example subject layout:
+
+```text
+sub-{label}/
+└── ses-1/
+    ├── anat/
+    │   ├── sub-{label}_ses-1_T1w.json
+    │   └── sub-{label}_ses-1_T1w.nii.gz
+    └── meg/
+        ├── sub-{label}_ses-1_coordsystem.json
+        ├── sub-{label}_ses-1_task-sprobe_channels.tsv
+        ├── sub-{label}_ses-1_task-sprobe_events.tsv
+        ├── sub-{label}_ses-1_task-sprobe_meg.json
+        └── sub-{label}_ses-1_task-sprobe_meg.ds/
+```
+
+The `*_meg.ds/` directory contains the native CTF MEG recording. Its vendor
+files are retained as components of the raw recording.
+
+## Known issues
+
+- Partial MEG runs: sub-239 (285 trials), sub-319 (182 trials), sub-432 (321 trials), and sub-509 (335 trials).
+- 5 participants MEG data were excluded from this release.
+- Anatomical MRI scans are available for only 23 subjects.
+- For defacing purposes 2 subjects anatomical scans are skull stripped (sub-112 and sub-226)
+- Clinical scales are unavailable for some healthy volunteers.
