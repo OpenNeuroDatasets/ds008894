@@ -2,7 +2,7 @@
 
 ## Overview
 
-This dataset contains magnetoencephalography (MEG) data acquired while participants completed a life/death dot-probe task. It was used to investigate whether suicide risk is associated with altered selective attention to mortality-related information and with changes in the cortical dynamics that support sensory processing and attentional control as described in the paper: *Attentional bias to death-related stimuli: Modeling cortical dynamics underlying suicide risk*.
+This dataset contains magnetoencephalography (MEG) data acquired while participants completed a suicide dot-probe task. It was used to investigate whether suicide risk is associated with altered selective attention to mortality-related information and with changes in the cortical dynamics that support sensory processing and attentional control as described in the paper: *Attentional bias to death-related stimuli: Modeling cortical dynamics underlying suicide risk*.
 
 ## Participants and recruitment
 
@@ -61,14 +61,14 @@ Example subject layout:
 sub-<label>/
 └── ses-1/
     ├── anat/
-    │   ├── sub-<label>_ses-1_T1w.json
-    │   └── sub-<label>_ses-1_T1w.nii.gz
+    │   ├── sub-<id>_ses-1_T1w.json
+    │   └── sub-<id>_ses-1_T1w.nii.gz
     └── meg/
-        ├── sub-<label>_ses-1_coordsystem.json
-        ├── sub-<label>_ses-1_task-sprobe_channels.tsv
-        ├── sub-<label>_ses-1_task-sprobe_events.tsv
-        ├── sub-<label>_ses-1_task-sprobe_meg.json
-        └── sub-<label>_ses-1_task-sprobe_meg.ds/
+        ├── sub-<id>_ses-1_coordsystem.json
+        ├── sub-<id>_ses-1_task-sprobe_channels.tsv
+        ├── sub-<id>_ses-1_task-sprobe_events.tsv
+        ├── sub-<id>_ses-1_task-sprobe_meg.json
+        └── sub-<id>_ses-1_task-sprobe_meg.ds/
 ```
 
 The `*_meg.ds/` directory contains the native CTF MEG recording. Its vendor
