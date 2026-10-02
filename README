@@ -58,7 +58,7 @@ through NCT00397111.
 Example subject layout:
 
 ```
-sub-<label>/
+sub-<id>/
 └── ses-1/
     ├── anat/
     │   ├── sub-<id>_ses-1_T1w.json
